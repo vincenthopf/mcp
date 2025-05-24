@@ -1,6 +1,6 @@
 import { createMcpHandler } from '@vercel/mcp-adapter';
 import { z } from 'zod';
-import dns from 'dns2';
+import { resolve } from 'dns/promises';
 
 const TOP_TLDS = [
   "com", "net", "org", "io", "co", "app", "dev", "ai", 
@@ -45,11 +45,11 @@ async function getRdapData(domain: string): Promise<any> {
 
 async function checkDns(domain: string): Promise<boolean> {
   try {
-    await dns.resolve(domain, 'A');
+    await resolve(domain, 'A');
     return true;
   } catch {
     try {
-      await dns.resolve(domain, 'NS');
+      await resolve(domain, 'NS');
       return true;
     } catch {
       return false;

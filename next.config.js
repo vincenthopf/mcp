@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: ['dns2']
-  }
+  // No external packages needed since we're using Node.js built-in dns
 }
 
 module.exports = nextConfig
