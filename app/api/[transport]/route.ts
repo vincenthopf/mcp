@@ -180,15 +180,6 @@ const handler = createMcpHandler(
         };
       }
     );
-  },
-  {
-    name: 'domain-checker',
-    version: '1.0.0'
-  },
-  {
-    basePath: '/api',
-    maxDuration: 60,
-    verboseLogs: true,
   }
 );
 
