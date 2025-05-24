@@ -54,7 +54,7 @@ export default function Home() {
     "domain-checker": {
       "command": "npx",
       "args": [
-        "@modelcontextprotocol/server-fetch",
+        "@vercel/mcp-adapter",
         "${process.env.VERCEL_URL || 'your-domain.vercel.app'}/api"
       ]
     }

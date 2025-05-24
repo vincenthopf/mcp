@@ -38,7 +38,7 @@ Add to your Claude Desktop config (`claude_desktop_config.json`):
     "domain-checker": {
       "command": "npx",
       "args": [
-        "@modelcontextprotocol/server-fetch",
+        "@vercel/mcp-adapter",
         "https://your-domain.vercel.app/api"
       ]
     }
