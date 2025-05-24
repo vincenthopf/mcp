@@ -2,6 +2,8 @@
 
 A Model Context Protocol (MCP) server for checking domain availability, built with Next.js and deployed on Vercel.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvincenthopf%2Fmcp)
+
 ## Features
 
 - **Check Domain**: Verify if a specific domain is available for registration
