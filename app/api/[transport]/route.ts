@@ -152,7 +152,7 @@ async function checkTldsTool(keyword: string): Promise<string> {
 }
 
 const handler = createMcpHandler(
-  server => {
+  async server => {
     server.tool(
       'check_domain',
       'Check if a domain is available for registration',
